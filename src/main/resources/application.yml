@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: meteorological-monitoring
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/weather-monitoring?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: 6327zxt523
+
+  servlet:
+    multipart:
+      max-request-size: 2560MB
+      max-file-size: 256MB
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+
